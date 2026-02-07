@@ -1,0 +1,199 @@
+/* Premium Chocolate Day Styling */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #8B4513, #D2691E, #F4A460);
+    background-image: url('images.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #FFF;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.wish-section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#wish-form {
+    margin-bottom: 20px;
+}
+
+#wish-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+#wish-form input {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+#wish-form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background: #8B4513;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#wish-form button:hover {
+    background: #A0522D;
+}
+
+#wish-display {
+    margin-top: 20px;
+}
+
+#personalized-wish {
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+    display: none;
+}
+
+.chocolate-gallery {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.chocolate-gallery h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+footer h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.5em;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+    header h1 {
+        font-size: 2.5em;
+    }
+    header p {
+        font-size: 1em;
+    }
+    #wish-form input {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    #wish-form button {
+        width: 100%;
+        padding: 12px;
+    }
+    #personalized-wish {
+        font-size: 1.2em;
+    }
+    .chocolate-gallery h2 {
+        font-size: 1.5em;
+    }
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .gallery img {
+        width: 250px;
+        height: 150px;
+    }
+    footer h3 {
+        font-size: 1.2em;
+    }
+    footer p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+    .gallery img {
+        width: 200px;
+        height: 120px;
+    }
+    .container {
+        margin: 5px;
+        padding: 10px;
+    }
+}
